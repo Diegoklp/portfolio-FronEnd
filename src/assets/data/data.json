@@ -1,0 +1,24 @@
+{
+  "name": "diego",
+  "title":"Full Stack Developer Jr",
+  "bio":"Soy graduado de la secundaria Tecnica Nº11 de Técnico en Informática personal y profesional.",
+  "img":"assets/profile.jpg",
+
+  "experience":[{
+    "title":"Práctica profesionalizantes",
+    "period":"05/04/22 - 10/08/22",
+    "detail":"Realizé una aplicación para la gestión de reclamos de semáforos"
+  }],
+  "education":[{
+    "title":"Ingeniería en Informática",
+    "instituto":"Universidad Nacional de la Matanza",
+    "period":"04/23 - 2028(Aprox)",
+    "detalle":""
+  },
+{
+    "title":"Técnico en informática personal y profesional",
+    "instituto":"Escuela Secundaria Técnica Nº11 Islas Malvinas",
+    "period":"2016 - 2022",
+    "detail":"+200 Prácticas profesionalizantes"
+}]
+  }
