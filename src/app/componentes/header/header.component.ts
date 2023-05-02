@@ -1,20 +1,12 @@
 import { Component,OnInit } from '@angular/core';
-import { DatosPorftfolioService } from 'src/app/services/datos-porftfolio.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit{
-miporfolio:any;
+export class HeaderComponent{
 
-  constructor(private datosportfolio:DatosPorftfolioService ){}
+  constructor() { }
 
-   ngOnInit(): void{
-    this.datosportfolio.ObtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.miporfolio=data;
-    });
-   }
-  }
+}

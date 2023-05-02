@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent {
-
+constructor(){};
+  ngOnInit(): void{
+}
 }

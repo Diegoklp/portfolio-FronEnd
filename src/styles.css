@@ -79,7 +79,11 @@ body {
   align-items: center;
   padding: 50px;
 }
-
+#acerca-de ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #acerca-de img {
   border-radius: 50%;
   width: 200px;

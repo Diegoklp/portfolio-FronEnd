@@ -1,33 +1,29 @@
 <div id="experiencia">
   <h3>EXPERIENCIA</h3>
-    <div class="experiencia-item">
-      <img class="experiencia-logo" src="assets/logo-LMT.png" alt="Logo empresa 2">
+  <ul *ngFor="let experience of experiencelist">
+  <div class="experiencia-item">
+      <img class="experiencia-logo" [src]="experience.img" alt="Logo empresa">
       <div class="experiencia-info">
-        <h3>{{miporfolio.experience[0].title}}</h3>
-        <p>{{miporfolio.experience[0].period}} <p>
-        <p>{{miporfolio.experience[0].detail}}</p>
+        <h3>{{experience.title}}</h3>
+        <p>{{experience.period}}<p>
+        <p>{{experience.detail}}</p>
       </div>
     </div>
+  </ul>
     <!-- Agregar más items de experiencia si es necesario -->
   </div>
 
   <div id="educacion">
     <h3>EDUCACION</h3>
+    <ul *ngFor="let educacion of educacionlist">
     <div class="educacion-item">
-      <img class="educacion-logo" src="assets/logo_unlam.png" alt="Logo instituto 1">
+      <img class="educacion-logo" [src]="educacion.img" alt="Logo instituto">
       <div class="educacion-info">
-        <h3>{{miporfolio.education[0].title}}</h3>
-        <p>{{miporfolio.education[0].instituto}}</p>
-        <p>{{miporfolio.education[0].period}}</p>
+        <h3>{{educacion.title}}</h3>
+        <p>{{educacion.instituto}}</p>
+        <p>{{educacion.period}}</p>
+        <p>{{educacion.detail}}</p>
       </div>
     </div>
-    <div class="educacion-item">
-      <img class="educacion-logo" src="assets/Tecnica-logo.png" alt="Logo instituto 2">
-      <div class="educacion-info">
-        <h3>{{miporfolio.education[1].title}}</h3>
-        <p>{{miporfolio.education[1].instituto}}</p>
-        <p>{{miporfolio.education[1].period}}</p>
-        <p>{{miporfolio.education[1].detail}}</p>
-      </div>
-    </div>
+</ul>
     </div>

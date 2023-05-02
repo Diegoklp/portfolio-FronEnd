@@ -1,7 +1,9 @@
 <div class="div-all">
   <div id="acerca-de">
-    <img [src]="miporfolio.img" alt="Foto de perfil">
-    <h2>{{miporfolio.name}}</h2>
-    <p>{{miporfolio.title}}</p>
-    <p>{{miporfolio.bio}}</p>
+    <ul *ngFor="let acercade of acercadelist">
+    <img [src]="acercade.img" alt="Foto de perfil">
+    <h2>{{acercade.name}}</h2>
+    <p>{{acercade.title}}</p>
+    <p>{{acercade.bio}}</p>
+  </ul>
   </div>

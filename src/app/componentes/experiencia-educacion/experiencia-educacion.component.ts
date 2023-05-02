@@ -7,14 +7,15 @@ import { DatosPorftfolioService } from 'src/app/services/datos-porftfolio.servic
   styleUrls: ['./experiencia-educacion.component.css']
 })
 export class ExperienciaEducacionComponent implements OnInit{
-  miporfolio:any;
-
+  educacionlist:any;
+  experiencelist:any;
     constructor(private datosportfolio:DatosPorftfolioService ){}
 
      ngOnInit(): void{
       this.datosportfolio.ObtenerDatos().subscribe(data =>{
         console.log(data);
-        this.miporfolio=data;
+        this.educacionlist=data.education;
+        this.experiencelist=data.experience;
       });
      }
     }
